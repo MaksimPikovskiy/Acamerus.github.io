@@ -1,0 +1,34 @@
+{
+  "name": "Daniel Furmanov",
+  "title": "Project Manager",
+  "description": "Transforming complex challenges into successful outcomes through strategic planning, agile methodologies, and team empowerment.",
+  "links": [
+    {
+      "name": "LinkedIn",
+      "link": "https://www.linkedin.com/in/daniel-furmanov/"
+    },
+    {
+      "name": "GitHub",
+      "link": "https://github.com/Acamerus"
+    },
+    {
+      "name": "LeetCode",
+      "link": "https://leetcode.com"
+    }
+  ],
+  "sections": ["home", "about", "projects", "skills", "testimonials", "contact"],
+  "contact": [
+    {
+      "name": "mail",
+      "text": "danielfurmanov@hotmail.com"
+    },
+    {
+      "name": "phone",
+      "text": "(718)-614-0080"
+    },
+    {
+      "name": "location",
+      "text": "Brooklyn, NY"
+    }
+  ]
+}
