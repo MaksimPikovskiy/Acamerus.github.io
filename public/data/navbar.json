@@ -1,5 +1,5 @@
 {
   "sections": ["home", "about", "projects", "skills", "testimonials", "contact"],
   "name": "Daniel Furmanov",
-  "title": "PM"
+  "short_title": "PM"
 }

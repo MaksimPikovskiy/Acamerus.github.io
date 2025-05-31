@@ -54,7 +54,7 @@ export default function Navbar({ isDarkMode, toggleDarkMode }) {
                 {navbar_data.name}
               </span>
               <span className="ml-2 text-purple-600 dark:text-purple-400">
-                | {navbar_data.title}
+                | {navbar_data.short_title}
               </span>
             </a>
           </div>
