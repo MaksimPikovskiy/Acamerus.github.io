@@ -90,7 +90,7 @@ export default function Footer() {
           </p>
           <button
             onClick={scrollToTop}
-            className="mt-4 md:mt-0 bg-slate-800 hover:bg-slate-700 text-white p-3 rounded-full transition-colors"
+            className="mt-4 md:mt-0 bg-slate-800 hover:bg-slate-700 text-white p-3 rounded-full transition-colors cursor-pointer"
             aria-label="Back to Top"
           >
             <ArrowUp size={20} />
