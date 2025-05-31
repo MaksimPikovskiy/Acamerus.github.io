@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import HomeSection from "./components/HomeSection";
 import Footer from "./components/Footer";
+import AboutSection from "./components/AboutSection";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -37,6 +38,7 @@ function App() {
   return <div>
     <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
     <HomeSection />
+    <AboutSection />
     <Footer />
   </div>;
 }
