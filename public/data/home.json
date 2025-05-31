@@ -1,0 +1,14 @@
+{
+  "title": "Project Manager",
+  "subtitle": "With Experience",
+  "description": "Transforming complex challenges into successful outcomes through strategic planning, agile methodologies, and team empowerment.",
+  "button1": {
+    "link": "projects",
+    "text": "View my projects"
+  },
+  "button2": {
+    "link": "contact",
+    "text": "Get in touch"
+  },
+  "experience": "2+ Years"
+}
