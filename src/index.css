@@ -93,6 +93,23 @@ body {
   transform: translateY(-5px);
 }
 
+.skill-bar {
+  @apply relative h-4 bg-slate-200 rounded-full overflow-hidden dark:bg-slate-700;
+}
+
+.skill-progress {
+  @apply absolute top-0 left-0 h-full bg-purple-600 dark:bg-purple-400 rounded-full transition-all duration-1000 ease-out;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 @utility scrollbar-overlay {
   &::-webkit-scrollbar {
     width: 6px;
