@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import AboutSection from "./components/AboutSection";
 import ExperienceSection from "./components/ExperienceSection";
 import EducationSection from "./components/EducationSection";
+import ProjectsSection from "./components/ProjectsSection";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -37,14 +38,17 @@ function App() {
     }
   };
 
-  return <div>
-    <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-    <HomeSection />
-    <AboutSection />
-    <EducationSection />
-    <ExperienceSection />
-    <Footer />
-  </div>;
+  return (
+    <div>
+      <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+      <HomeSection />
+      <AboutSection />
+      <EducationSection />
+      <ExperienceSection />
+      <ProjectsSection />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;

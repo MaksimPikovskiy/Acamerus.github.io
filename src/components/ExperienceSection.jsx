@@ -46,7 +46,7 @@ export default function ExperienceSection() {
                     </h4>
                     <ul className="list-disc list-outside space-y-1 text-slate-600 dark:text-slate-400">
                       {experience.contributions.map((contribution, index) => (
-                        <li key={index}>{contribution}</li>
+                        <li key={index} className="ms-5">{contribution}</li>
                       ))}
                     </ul>
                   </div>
