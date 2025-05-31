@@ -4,7 +4,7 @@ import home_data from "../../public/data/home.json";
 export default function HomeSection() {
   return (
     <section id="home" className="relative min-h-screen flex items-center">
-      <div className="absolute inset-0 bg-gradient-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 -z-10" />
       <div className="section-container flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-slate-900 dark:text-white leading-tight">

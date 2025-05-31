@@ -9,10 +9,8 @@
   --success: #10b981;
   --warning: #f59e0b;
   --danger: #ef4444;
-  /* --background: #f8fafc; */
-  /* --text: #1e293b; */
-  --background: #F5F8FB;
-  --text: #172033;
+  --background: #f8fafc;
+  --text: #1e293b;
 }
 
 .dark {
@@ -22,10 +20,8 @@
   --success: #34d399;
   --warning: #fbbf24;
   --danger: #f87171;
-  /* --background: #0f172a; */
-  /* --text: #f8fafc; */
-  --background: #172033;
-  --text: #F5F8FB;
+  --background: #0f172a;
+  --text: #f8fafc;
 }
 
 html {
