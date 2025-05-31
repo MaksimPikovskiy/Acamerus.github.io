@@ -34,6 +34,8 @@ export default function AboutSection() {
               </a>
               <a
                 href={`${about_data.about_button2.link}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn btn-secondary"
               >
                 {about_data.about_button2.name}

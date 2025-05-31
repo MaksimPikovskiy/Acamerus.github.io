@@ -65,12 +65,18 @@ export default function Footer() {
                     name={contact.name}
                     className="w-4 h-4 mr-2 text-purple-400"
                   />
-                  <a
-                    href={`mailto:${contact.text}`}
-                    className="text-slate-300 hover:text-purple-400 transition-colors"
-                  >
-                    {contact.text}
-                  </a>
+                  {contact.action.length > 0 ? (
+                    <a
+                      href={`${contact.action}${contact.text}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-slate-300 hover:text-purple-400 transition-colors"
+                    >
+                      {contact.text}
+                    </a>
+                  ) : (
+                    <span className="text-slate-300">{contact.text}</span>
+                  )}
                 </li>
               ))}
             </ul>

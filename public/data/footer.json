@@ -19,14 +19,17 @@
   "sections": ["home", "about", "projects", "skills", "testimonials", "contact"],
   "contact": [
     {
+      "action": "mailto:",
       "name": "mail",
       "text": "danielfurmanov@hotmail.com"
     },
     {
+      "action": "tel:",
       "name": "phone",
       "text": "(718)-614-0080"
     },
     {
+      "action": "https://www.google.com/maps/place/",
       "name": "location",
       "text": "Brooklyn, NY"
     }
