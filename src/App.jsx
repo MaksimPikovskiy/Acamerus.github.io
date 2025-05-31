@@ -4,6 +4,7 @@ import HomeSection from "./components/HomeSection";
 import Footer from "./components/Footer";
 import AboutSection from "./components/AboutSection";
 import ExperienceSection from "./components/ExperienceSection";
+import EducationSection from "./components/EducationSection";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -40,6 +41,7 @@ function App() {
     <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
     <HomeSection />
     <AboutSection />
+    <EducationSection />
     <ExperienceSection />
     <Footer />
   </div>;
