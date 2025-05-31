@@ -16,7 +16,7 @@
       "link": "https://leetcode.com"
     }
   ],
-  "sections": ["home", "about", "projects", "skills", "testimonials", "contact"],
+  "sections": ["home", "about", "education", "experience", "projects", "skills", "testimonials", "contact"],
   "contact": [
     {
       "action": "mailto:",

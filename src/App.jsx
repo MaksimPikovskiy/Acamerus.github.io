@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import HomeSection from "./components/HomeSection";
 import Footer from "./components/Footer";
 import AboutSection from "./components/AboutSection";
+import ExperienceSection from "./components/ExperienceSection";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -39,6 +40,7 @@ function App() {
     <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
     <HomeSection />
     <AboutSection />
+    <ExperienceSection />
     <Footer />
   </div>;
 }

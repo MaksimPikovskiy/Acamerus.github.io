@@ -59,7 +59,7 @@ export default function Navbar({ isDarkMode, toggleDarkMode }) {
             </a>
           </div>
 
-          <nav className="hidden md:flex items-center space-x-4">
+          <nav className="hidden xl:flex items-center space-x-4">
             {navbar_data.sections.map((section) => (
               <a
                 key={section}
@@ -81,7 +81,7 @@ export default function Navbar({ isDarkMode, toggleDarkMode }) {
             </button>
           </nav>
 
-          <div className="flex md:hidden items-center">
+          <div className="flex xl:hidden items-center">
             <button
               onClick={toggleDarkMode}
               className="mr-2 p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
@@ -101,7 +101,7 @@ export default function Navbar({ isDarkMode, toggleDarkMode }) {
       </div>
 
       {isMenuOpen && (
-        <nav className="md:hidden bg-white dark:bg-slate-900 shadow-lg">
+        <nav className="xl:hidden bg-white dark:bg-slate-900 shadow-lg">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navbar_data.sections.map((section) => (
               <a
