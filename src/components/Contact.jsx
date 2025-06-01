@@ -93,7 +93,6 @@ export default function ContactSection() {
       //   (error) => {
       //     console.error("Failed to send email:", error.text);
       //     setIsSubmitting(false);
-      //     setSubmissionStatus("error");
       //   }
       // );
 
