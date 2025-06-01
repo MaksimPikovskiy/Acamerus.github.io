@@ -60,22 +60,25 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
             <ul className="space-y-2">
               {footer_data.contact.map((contact, index) => (
-                <li key={index} className="flex items-center">
+                <li key={index} className="flex items-start">
                   <IconComponent
                     name={contact.name}
-                    className="w-4 h-4 mr-2 text-purple-400"
+                    className="w-4 h-4 mr-2 text-purple-400 flex-shrink-0 mt-1"
                   />
                   {contact.action.length > 0 ? (
                     <a
                       href={`${contact.action}${contact.text}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-slate-300 hover:text-purple-400 transition-colors"
+                      className="text-slate-300 hover:text-purple-400 transition-colors truncate"
+                      title={contact.text}
                     >
                       {contact.text}
                     </a>
                   ) : (
-                    <span className="text-slate-300">{contact.text}</span>
+                    <span className="text-slate-300 truncate">
+                      {contact.text}
+                    </span>
                   )}
                 </li>
               ))}

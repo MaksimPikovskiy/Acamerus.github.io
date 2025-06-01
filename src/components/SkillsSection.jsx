@@ -82,7 +82,10 @@ export default function SkillsSection() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {skills_data.certifications.map((cert, index) => (
-                <div className="border border-slate-200 dark:border-slate-700 rounded-lg p-4 hover:border-purple-600 dark:hover:border-purple-400 transition-colors">
+                <div
+                  key={index}
+                  className="border border-slate-200 dark:border-slate-700 rounded-lg p-4 hover:border-purple-600 dark:hover:border-purple-400 transition-colors"
+                >
                   <div className="flex items-center mb-3">
                     <CircleCheck className="w-8 h-8 text-purple-600 dark:text-purple-400 mr-3" />
                     <h4 className="font-medium">{cert.name}</h4>

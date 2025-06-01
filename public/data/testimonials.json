@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "John Smith",
+    "role": "CEO",
+    "company": "Some Startup",
+    "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "text": "Working with Daniel on our healthcare platform redesign was a game-changer. He brought both technical insight and strategic vision that helped us not just deliver on time, but exceed our KPIs by 40%."
+  },
+  {
+    "id": 2,
+    "name": "Maksim Pikovskiy",
+    "role": "Software Developer",
+    "company": "Spotlight",
+    "image": "/images/testimonials/max.jpg",
+    "text": "Daniel's leadership is irreplaceable. His ability to navigate even in the hot pudge of failing projects while keeping the technical team motivated was outstanding."
+  },
+  {
+    "id": 3,
+    "name": "Jane Doe",
+    "role": "Engineering Manager",
+    "company": "Some Company",
+    "image": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "text": "I've worked with many project managers, but Daniel stands out for their technical depth combined with leadership abilities. He doesn't just manage tasks—they truly understand the work and inspire teams to excellence."
+  }
+]

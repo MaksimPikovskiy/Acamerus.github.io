@@ -101,13 +101,23 @@ body {
   @apply absolute top-0 left-0 h-full bg-purple-600 dark:bg-purple-400 rounded-full transition-all duration-1000 ease-out;
 }
 
+.testimonial-card {
+  @apply p-6 bg-white rounded-lg shadow-md dark:bg-slate-800;
+}
+
 .fade-in {
   animation: fadeIn 0.5s ease-in;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @utility scrollbar-overlay {
