@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import contact_data from "../../public/data/contact.json";
 import { Check, LoaderCircle, Mail, MapPin, Phone, Send } from "lucide-react";
 import IconComponent from "./IconComponent";
@@ -10,6 +10,7 @@ const iconMap = {
 };
 
 export default function ContactSection() {
+  const form = useRef();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -64,6 +65,37 @@ export default function ContactSection() {
 
     if (validateForm()) {
       setIsSubmitting(true);
+      setIsSubmitted(false);
+
+      const serviceId = import.meta.env.EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.EMAILJS_PUBLIC_KEY;
+
+      // Install npm install @emailjs/browser
+
+      // emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
+      //   (result) => {
+      //     console.log('Email successfully sent!', result.text);
+      //     setIsSubmitting(false);
+
+      //     setIsSubmitted(true);
+      //     setErrors({});
+
+      //     setFormData({
+      //       name: "",
+      //       email: "",
+      //       subject: "",
+      //       message: "",
+      //     });
+
+      //     setTimeout(() => setIsSubmitted(false), 5000);
+      //   },
+      //   (error) => {
+      //     console.error("Failed to send email:", error.text);
+      //     setIsSubmitting(false);
+      //     setSubmissionStatus("error");
+      //   }
+      // );
 
       setTimeout(() => {
         setIsSubmitting(false);
@@ -159,7 +191,7 @@ export default function ContactSection() {
                 </p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form ref={form} onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label
                     htmlFor="name"

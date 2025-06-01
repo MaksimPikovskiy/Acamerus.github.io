@@ -69,8 +69,6 @@ export default function Footer() {
                   <IconComponent
                     name={contact.name}
                     className="w-4 h-4 mr-2 text-purple-400 flex-shrink-0 mt-1"
-                    width=""
-                    height=""
                   />
                   {contact.action.length > 0 ? (
                     <a
