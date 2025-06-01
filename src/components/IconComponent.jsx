@@ -1,11 +1,12 @@
-const IconComponent = ({ name, className }) => {
+const IconComponent = ({ name, className, width, height }) => {
   switch (name.toLowerCase()) {
     case "github":
       return (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
+          className={className}
+          width={width}
+          height={height}
           viewBox="0 0 24 24"
           fill="currentColor"
           stroke="none"
@@ -17,8 +18,9 @@ const IconComponent = ({ name, className }) => {
       return (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
+          className={className}
+          width={width}
+          height={height}
           viewBox="0 0 24 24"
           fill="currentColor"
           stroke="none"
@@ -30,8 +32,9 @@ const IconComponent = ({ name, className }) => {
       return (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
+          className={className}
+          width={width}
+          height={height}
           viewBox="0 0 24 24"
           fill="currentColor"
           stroke="none"
@@ -43,6 +46,8 @@ const IconComponent = ({ name, className }) => {
       return (
         <svg
           className={className}
+          width={width}
+          height={height}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -60,6 +65,8 @@ const IconComponent = ({ name, className }) => {
       return (
         <svg
           className={className}
+          width={width}
+          height={height}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -77,6 +84,8 @@ const IconComponent = ({ name, className }) => {
       return (
         <svg
           className={className}
+          width={width}
+          height={height}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -100,9 +109,9 @@ const IconComponent = ({ name, className }) => {
       return (
         <svg
           className={className}
+          width={width}
+          height={height}
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"

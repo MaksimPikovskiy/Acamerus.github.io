@@ -105,6 +105,10 @@ body {
   @apply p-6 bg-white rounded-lg shadow-md dark:bg-slate-800;
 }
 
+.contact-input {
+  @apply w-full px-4 py-2 bg-white border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent dark:bg-slate-700 dark:border-slate-600 dark:focus:ring-purple-400;
+}
+
 .fade-in {
   animation: fadeIn 0.5s ease-in;
 }

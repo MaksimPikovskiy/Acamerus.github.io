@@ -1,0 +1,34 @@
+{
+  "text": "I'm always open to discussing new projects, opportunities in project management, or ways to help your team deliver successful outcomes. Feel free to reach out using the form or contact details below.",
+  "contact": [
+    {
+      "action": "mailto:",
+      "name": "mail",
+      "text": "danielfurmanov@hotmail.com"
+    },
+    {
+      "action": "tel:",
+      "name": "phone",
+      "text": "(718)-614-0080"
+    },
+    {
+      "action": "https://www.google.com/maps/place/",
+      "name": "location",
+      "text": "Brooklyn, NY"
+    }
+  ],
+  "links": [
+    {
+      "name": "LinkedIn",
+      "link": "https://www.linkedin.com/in/daniel-furmanov/"
+    },
+    {
+      "name": "GitHub",
+      "link": "https://github.com/Acamerus"
+    }
+  ],
+  "message_sent": {
+    "title": "Message Sent!",
+    "text": "Thank you for your message. I'll get back to you soon."
+  }
+}

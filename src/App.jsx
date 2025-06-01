@@ -8,6 +8,7 @@ import EducationSection from "./components/EducationSection";
 import ProjectsSection from "./components/ProjectsSection";
 import SkillsSection from "./components/SkillsSection";
 import TestimonialsSection from "./components/TestimonialsSection";
+import ContactSection from "./components/Contact";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -50,6 +51,7 @@ function App() {
       <ProjectsSection />
       <SkillsSection />
       <TestimonialsSection />
+      <ContactSection />
       <Footer />
     </div>
   );
