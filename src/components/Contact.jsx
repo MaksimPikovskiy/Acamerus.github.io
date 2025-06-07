@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import contact_data from "../../public/data/contact.json";
 import { Check, LoaderCircle, Mail, MapPin, Phone, Send } from "lucide-react";
 import IconComponent from "./IconComponent";
+import Mailer from "../util/mailer.js";
 
 const iconMap = {
   mail: Mail,
@@ -67,47 +68,32 @@ export default function ContactSection() {
       setIsSubmitting(true);
       setIsSubmitted(false);
 
-      const serviceId = import.meta.env.EMAILJS_SERVICE_ID;
-      const templateId = import.meta.env.EMAILJS_TEMPLATE_ID;
-      const publicKey = import.meta.env.EMAILJS_PUBLIC_KEY;
+      const result = Mailer({
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      });
 
-      // Install npm install @emailjs/browser
-
-      // emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
-      //   (result) => {
-      //     console.log('Email successfully sent!', result.text);
-      //     setIsSubmitting(false);
-
-      //     setIsSubmitted(true);
-      //     setErrors({});
-
-      //     setFormData({
-      //       name: "",
-      //       email: "",
-      //       subject: "",
-      //       message: "",
-      //     });
-
-      //     setTimeout(() => setIsSubmitted(false), 5000);
-      //   },
-      //   (error) => {
-      //     console.error("Failed to send email:", error.text);
-      //     setIsSubmitting(false);
-      //   }
-      // );
-
-      setTimeout(() => {
+      if (result.status === "error") {
+        console.error("Failed to send email:", result.message, result.error);
         setIsSubmitting(false);
-        setIsSubmitted(true);
-        setFormData({
-          name: "",
-          email: "",
-          subject: "",
-          message: "",
-        });
+        return;
+      }
 
-        setTimeout(() => setIsSubmitted(false), 5000);
-      }, 1500);
+      console.log("Email successfully sent!", result.text);
+      setIsSubmitting(false);
+      setIsSubmitted(true);
+      setErrors({});
+
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+
+      setTimeout(() => setIsSubmitted(false), 5000);
     }
   };
 
