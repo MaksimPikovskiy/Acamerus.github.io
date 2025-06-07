@@ -1,0 +1,117 @@
+{
+  "categories": ["All", "Database", "Web", "Front-End", "Back-End"],
+  "projects": [
+    {
+      "categories": ["Web", "Front-End"],
+      "img": "/images/projects/mentorship.jpeg",
+      "button": "View Details",
+      "name": "Mentorship Continuation Project",
+      "period": "Dec 2024 - January 2025",
+      "team_size": "3 members",
+      "description": "Spearheaded the continuation and expansion of the AI Innovation Challenge project, fostering a collaborative environment by encouraging original members and recruiting new talent under the direct mentorship of Dr. Azhar. This initiative involved comprehensive data gathering of BMCC Computer Science course requirements and prerequisites, structuring this information into a JSON format for accessibility. Concurrently, I led the development and deployment of the \"BMCC Guide\" website, hosted on Vercel, to effectively present this critical academic information to students.",
+      "responsibilities": [
+        {
+          "subtitle": "Project Leadership & Team Building",
+          "description": "Initiated and managed the project's continuation, actively recruiting and integrating new members while ensuring sustained engagement from original participants."
+        },
+        {
+          "subtitle": "Mentorship Facilitation",
+          "description": "Established and maintained a direct mentorship pipeline with Dr. Azhar, ensuring high-quality guidance for project members."
+        },
+        {
+          "subtitle": "Data Structuring & Analysis",
+          "description": "Systematically collected and organized BMCC Computer Science course requirements and prerequisites, transforming complex data into a structured JSON format for efficient use."
+        },
+        {
+          "subtitle": "Full-Stack Web Development",
+          "description": "Designed, developed, and deployed the \"BMCC Guide\" website, providing a user-friendly platform for academic information."
+        },
+        {
+          "subtitle": "Deployment & Hosting",
+          "description": "Successfully utilized Vercel for seamless and efficient hosting of the web application."
+        }
+      ],
+      "outcome": "Deployed the website for internal testing",
+      "stack": [" JavaScript (JS)", "CSS", "HTML", "React", "Vercel"],
+      "modal_buttons": [
+        {
+          "name": "View Project",
+          "link": "https://bmcc-guide.vercel.app/"
+        },
+        {
+          "name": "View Source Code",
+          "link": "https://github.com/MaksimPikovskiy/BMCC-Guide"
+        }
+      ]
+    },
+    {
+      "categories": ["Web", "Front-End", "Back-End"],
+      "img": "/images/projects/ai_innovation.jpg",
+      "button": "View Details",
+      "name": "BMCC AI Innovation Challenge",
+      "period": "Nov 2024 - Nov 2024",
+      "team_size": "5 members",
+      "description": "",
+      "responsibilities": [
+        {
+          "subtitle": "",
+          "description": "Secured 3rd place in the General AI Track, the most competitive track, for demonstrating innovation in academic advisory solution."
+        },
+        {
+          "subtitle": "",
+          "description": "Developed an AI-driven chatbot integrating DegreeWorks simulated data to provide personalized academic advising, progress tracking, and course planning for Computer Science students."
+        },
+        {
+          "subtitle": "",
+          "description": "Implemented a web scraper using Selenium to automate the retrieval of student data and degree progress information."
+        },
+        {
+          "subtitle": "",
+          "description": "Used Replete as a local LLM and REST APIs to enhance chatbot capabilities, improving accessibility to academic and wellness resources."
+        }
+      ],
+      "outcome": "Secured 3rd place in the General AI Track",
+      "stack": ["Python", "Git", "Tailscale", "Streamlit", "Requests", "REST"],
+      "modal_buttons": [
+        {
+          "name": "View Outcome",
+          "link": "https://sites.google.com/view/bmcchacksai/fall-2024-winners/ai-innovation-track"
+        }
+      ]
+    },
+    {
+      "categories": ["Back-End", "Database"],
+      "img": "/images/projects/database.webp",
+      "button": "View Details",
+      "name": "Course Database: Bank Loan Customers",
+      "period": "Jun 2024 - Jul 2024",
+      "team_size": "4 members",
+      "description": "",
+      "responsibilities": [
+        {
+          "subtitle": "",
+          "description": "Architected a banking database system using ER modeling and UML notation, normalized to BCNF across 6 core tables."
+        },
+        {
+          "subtitle": "",
+          "description": "Implemented complex SQL queries for data manipulation, including multi-table JOINs and subqueries for comprehensive reports."
+        },
+        {
+          "subtitle": "",
+          "description": "Developed a normalized Microsoft Access application with parameterized queries and custom VBA functions."
+        },
+        {
+          "subtitle": "",
+          "description": "Created an intuitive UI using Access forms with embedded macros and event procedures for real-time financial analytics."
+        },
+        {
+          "subtitle": "",
+          "description": "Produced a normalized Access/SQL database from Excel import to automate customer accounts and transactions, enhancing data integrity, security, and ability to add new data."
+        }
+      ],
+      "outcome": "",
+      "stack": ["SQL", "Access", "Database Modeling", "Excel"],
+      "modal_buttons": []
+    }
+  ]
+}

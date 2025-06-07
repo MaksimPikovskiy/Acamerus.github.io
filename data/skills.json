@@ -1,0 +1,79 @@
+{
+  "categories": [
+    {
+      "title": "Project Management",
+      "skills": [
+        { "name": "Agile Methodologies", "level": 95 },
+        { "name": "Waterfall", "level": 90 },
+        { "name": "Hybrid Frameworks", "level": 85 }
+      ]
+    },
+    {
+      "title": "Technical Skills",
+      "skills": [
+        { "name": "Software Development Lifecycle", "level": 90 },
+        { "name": "Database Management", "level": 75 },
+        { "name": "UI/UX Design Principles", "level": 70 },
+        { "name": "Data Analytics", "level": 82 }
+      ]
+    },
+    {
+      "title": "Tools & Software",
+      "skills": [
+        { "name": "Jira", "level": 95 },
+        { "name": "Asana", "level": 90 },
+        { "name": "Slack", "level": 92 }
+      ]
+    },
+    {
+      "title": "Soft Skills",
+      "skills": [
+        { "name": "Team Leadership", "level": 95 },
+        { "name": "Communication", "level": 90 },
+        { "name": "Negotiation", "level": 85 },
+        { "name": "Problem Solving", "level": 92 },
+        { "name": "Conflict Resolution", "level": 88 }
+      ]
+    },
+    {
+      "title": "Programming Languages",
+      "skills": [
+        { "name": "JetSQL", "level": 95 },
+        { "name": "Python", "level": 90 },
+        { "name": "C++", "level": 78 },
+        { "name": "Golang", "level": 50 },
+        { "name": "JavaScript", "level": 88 },
+        { "name": "CSS", "level": 91 },
+        { "name": "HTML", "level": 99 }
+      ]
+    },
+    {
+      "title": "Frameworks",
+      "skills": [
+        { "name": "Streamlit", "level": 95 },
+        { "name": "ReactJS", "level": 87 },
+        { "name": "Requests", "level": 83 },
+        { "name": "Tailwind v4", "level": 73 }
+      ]
+    },
+    {
+      "title": "Developer Tools & Software",
+      "skills": [
+        { "name": "Git", "level": 95 },
+        { "name": "Bitbucker", "level": 90 },
+        { "name": "Visual Studio Code", "level": 96 },
+        { "name": "Tailscale", "level": 78 },
+        { "name": "Vercel", "level": 88 },
+        { "name": "Podman", "level": 85 },
+        { "name": "VIMI", "level": 15 }
+      ]
+    }
+  ],
+  "certifications": [
+    { "name": "Certified ScrumMaster (CSM)", "issuer": "Scrum Alliance" },
+    {
+      "name": "Project Management Professional (PMP)",
+      "issuer": "Project Management Institute"
+    }
+  ]
+}
