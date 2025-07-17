@@ -1,15 +1,23 @@
 {
   "section_title": "Awards, Skills & Expertise",
-  "categories": [
+  "awards": [
+    { "name": "Gilman Alumni", "description": "Won Gilman Alumni through great effort", "link": "#" },
     {
-      "title": "Awards",
-      "skills": [
-        { "name": "Gilman Alumni", "link": "#" },
-        { "name": "BMCC International Internship Scholarship", "link": "#" },
-        { "name": "AI Innovation Challenge: Third Place Winner", "link": "https://sites.google.com/view/bmcchacksai/fall-2024-winners/ai-innovation-track" },
-        { "name": "BMCC: Dean's List" }
-      ]
+      "name": "BMCC International Internship Scholarship",
+      "description": "Achieved scholarship for my internship in Barcelona, Spain",
+      "link": "#"
     },
+    {
+      "name": "AI Innovation Challenge: Third Place Winner",
+      "description": "",
+      "link": "https://sites.google.com/view/bmcchacksai/fall-2024-winners/ai-innovation-track"
+    },
+    {
+      "name": "BMCC: Dean's List",
+      "description": "Became part of Dean's List for my college in 2023, 2024"
+    }
+  ],
+  "categories": [
     {
       "title": "Project Management",
       "skills": [
