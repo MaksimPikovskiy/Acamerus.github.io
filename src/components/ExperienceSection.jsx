@@ -1,4 +1,4 @@
-import experience_data from "../../public/data/experience.json";
+import experience_data from "../data/experience.json";
 import { Briefcase, Calendar, Link, MapPin } from "lucide-react";
 
 export default function ExperienceSection() {

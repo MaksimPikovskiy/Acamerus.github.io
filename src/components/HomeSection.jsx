@@ -1,5 +1,5 @@
 import { ArrowDown } from "lucide-react";
-import home_data from "../../public/data/home.json";
+import home_data from "../data/home.json";
 
 export default function HomeSection() {
   return (

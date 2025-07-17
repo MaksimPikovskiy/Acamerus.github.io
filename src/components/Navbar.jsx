@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Sun, Moon, Menu, X } from "lucide-react";
-import navbar_data from "../../public/data/navbar.json";
+import navbar_data from "../data/navbar.json";
 
 export default function Navbar({ isDarkMode, toggleDarkMode }) {
   const [isScrolled, setIsScrolled] = useState(false);

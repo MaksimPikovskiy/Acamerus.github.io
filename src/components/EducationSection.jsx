@@ -1,5 +1,5 @@
 import { Calendar, GraduationCap, MapPin } from "lucide-react";
-import education_data from "../../public/data/education.json";
+import education_data from "../data/education.json";
 
 export default function EducationSection() {
   return (

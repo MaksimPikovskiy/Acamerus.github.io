@@ -1,5 +1,5 @@
 import { ArrowUp } from "lucide-react";
-import footer_data from "../../public/data/footer.json";
+import footer_data from "../data/footer.json";
 import IconComponent from "./IconComponent";
 
 export default function Footer() {

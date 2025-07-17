@@ -1,12 +1,5 @@
-import { Briefcase, Award, Users, BookOpen } from "lucide-react";
-import about_data from "../../public/data/about.json";
-
-const iconMap = {
-  Briefcase: Briefcase,
-  Award: Award,
-  Users: Users,
-  BookOpen: BookOpen,
-};
+import about_data from "../data/about.json";
+import { ICON_MAP } from "./util/constants.js";
 
 export default function AboutSection() {
   return (
@@ -45,7 +38,7 @@ export default function AboutSection() {
 
           <div className="grid grid-cols-2 gap-6">
             {about_data.cards.map((card, index) => {
-              const IconToRender = iconMap[card.icon];
+              const IconToRender = ICON_MAP[card.icon];
               return (
                 <div
                   key={index}

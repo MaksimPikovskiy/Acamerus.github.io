@@ -1,5 +1,5 @@
 import { useState } from "react";
-import testimonials_data from "../../public/data/testimonials.json";
+import testimonials_data from "../data/testimonials.json";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 
 export default function TestimonialsSection() {

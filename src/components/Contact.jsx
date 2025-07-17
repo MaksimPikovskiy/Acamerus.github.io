@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import contact_data from "../../public/data/contact.json";
+import contact_data from "../data/contact.json";
 import { Check, LoaderCircle, Send } from "lucide-react";
 import IconComponent from "./IconComponent";
 import emailjs from "@emailjs/browser";

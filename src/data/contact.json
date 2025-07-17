@@ -3,17 +3,17 @@
   "contact": [
     {
       "action": "mailto:",
-      "name": "mail",
+      "name": "Mail",
       "text": "danielfurmanov@hotmail.com"
     },
     {
       "action": "tel:",
-      "name": "phone",
+      "name": "Phone",
       "text": "(718)-614-0080"
     },
     {
       "action": "https://www.google.com/maps/place/",
-      "name": "location",
+      "name": "Location",
       "text": "Brooklyn, NY"
     }
   ],

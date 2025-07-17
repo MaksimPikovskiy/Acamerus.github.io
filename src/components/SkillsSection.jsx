@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import skills_data from "../../public/data/skills.json";
+import skills_data from "../data/skills.json";
 import { CircleCheck, ExternalLink } from "lucide-react";
 
 export default function SkillsSection() {

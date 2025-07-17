@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import projects_data from "../../public/data/projects.json";
+import projects_data from "../data/projects.json";
 import { Calendar, Clock, ExternalLink, TrendingUp, Users, X } from "lucide-react";
 
 export default function ProjectsSection() {
