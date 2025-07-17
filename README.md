@@ -36,8 +36,9 @@ This is a personal portfolio website showcasing my skills, projects, and experie
 The project is organized into logical folders to maintain a clean and scalable codebase:
 
 ```
-├── public/                 # Static assets and data files
+├── public/                 # Static assets
 ├── src/                    # Source code for the React application
+│   ├── data/               # JSON data files    
 │   ├── components/         # Reusable React components for each section
 │   ├── App.jsx             # Main application component
 │   ├── index.css           # Global CSS styles
@@ -49,7 +50,7 @@ The project is organized into logical folders to maintain a clean and scalable c
 
 ## Data Management
 
-The `public/data` folder is crucial for managing the content of the website. Each JSON file within this folder corresponds to a specific section of the portfolio, allowing for easy content updates without touching the React components.
+The `src/data` folder is crucial for managing the content of the website. Each JSON file within this folder corresponds to a specific section of the portfolio, allowing for easy content updates without touching the React components.
 
 - `about.json`: Contains information for the "About Me" section.
 - `contact.json`: Holds contact details or configurations for the contact section.
@@ -72,17 +73,21 @@ Additionally, the `public` folder contains:
   - `profile_img.png`: The main profile image.
 - `resume.pdf`: Your resume in PDF format.
 
-## Environment Variables
+## Constants
 
-The `.env` file is used to store sensitive information and API keys, ensuring they are not hardcoded into the application.
+The `constants.js` file is used to store information and public API keys, ensuring they are easily accessed for modification without touching the code.
 
 ```
-VITE_EMAILJS_SERVICE_ID="your_emailjs_service_id"
-VITE_EMAILJS_TEMPLATE_ID="your_emailjs_template_id"
-VITE_EMAILJS_USER_ID="your_emailjs_public_key"
+ICON_MAP= {Briefcase: Briefcase, ...}
+SERVICE_ID="emailjs_service_id"
+TEMPLATE_ID="emailjs_template_id"
+USER_ID="emailjs_public_key"
 ```
 
-**Important:** Replace the placeholder values with your actual EmailJS credentials. For more information on obtaining these, refer to the [EmailJS documentation](https://www.emailjs.com/docs/).
+**Important:** 
+- Replace the placeholder values with your actual EmailJS credentials. For more information on obtaining these, refer to the [EmailJS documentation](https://www.emailjs.com/docs/).
+
+- To be able to use a bigger selection of Lucide Icons in JSON data files, add them to the `ICON_MAP` in the same format. For more information on what icons are available, refer to the [Lucide Website](https://lucide.dev/)
 
 ## Scripts
 
@@ -139,13 +144,13 @@ To get a copy of the project up and running on your local machine, follow these 
     npm install
     ```
 
-3.  **Create a `.env` file:**
-    Create a file named `.env` in the root of the project and add your EmailJS credentials:
+3.  **Update a `constants.js` file:**
+    Create a file named `.constants.js` in the `src/data/` folder of the project and add your EmailJS credentials:
 
     ```
-    VITE_EMAILJS_SERVICE_ID="your_emailjs_service_id"
-    VITE_EMAILJS_TEMPLATE_ID="your_emailjs_template_id"
-    VITE_EMAILJS_USER_ID="your_emailjs_public_key"
+    SERVICE_ID="emailjs_service_id"
+    TEMPLATE_ID="emailjs_template_id"
+    USER_ID="emailjs_public_key"
     ```
 
 4.  **Start the development server:**
@@ -165,7 +170,7 @@ To deploy the website to GitHub Pages:
     ```bash
     npm run deploy
     ```
-    This will build the application and push the `dist` folder to the `gh-pages` branch of your repository. Your site will then be live at `https://[your-github-username].github.io/[your-repository-name]/`.
+    This will build the application and push the `dist` folder to the `gh-pages` branch of your repository. Your site will then be live at `https://[your-github-username].github.io/`.
 
 ## Contact
 
