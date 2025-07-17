@@ -58,6 +58,7 @@ The `src/data` folder is crucial for managing the content of the website. Each J
 - `experience.json`: Contains information about professional experience.
 - `footer.json`: Data for the website footer.
 - `home.json`: Content for the introductory "Home" section.
+- `meta.json`: Meta data for the website.
 - `navbar.json`: Data for the navigation bar.
 - `projects.json`: Details about various projects.
 - `skills.json`: A list of skills.

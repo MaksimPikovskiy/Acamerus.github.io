@@ -1,0 +1,68 @@
+{
+  "general": {
+    "title": "Daniel Furmanov | Project Manager",
+    "description": "Experienced project manager with 2+ years delivering technology solutions across diverse industries. Specializing in agile methodologies, team leadership, and successful project delivery.",
+    "keywords": "project manager, technology solutions, agile methodology, project delivery, team leadership, software development, project management, tech consultant",
+    "robots": "index, follow",
+    "language": "English",
+    "author": "Daniel Furmanov"
+  },
+  "openGraph": {
+    "type": "website",
+    "url": "https://Acamerus.github.io/",
+    "title": "Daniel Furmanov | Project Manager",
+    "description": "Experienced project manager with 2+ years delivering technology solutions across diverse industries. Specializing in agile methodologies, team leadership, and successful project delivery.",
+    "image": "https://Acamerus.github.io/profile_img.png",
+    "imageSecureUrl": "https://Acamerus.github.io/profile_img.png",
+    "imageWidth": "82",
+    "imageHeight": "82",
+    "siteName": "Daniel Furmanov's Portfolio",
+    "locale": "en_US"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "url": "https://Acamerus.github.io/",
+    "title": "Daniel Furmanov | Project Manager",
+    "description": "Experienced project manager with 2+ years delivering technology solutions across diverse industries. Specializing in agile methodologies, team leadership, and successful project delivery.",
+    "image": "https://Acamerus.github.io/profile_img.png",
+    "creator": "@acamerus",
+    "site": "@acamerus"
+  },
+  "linkedin": {
+    "owner": "https://www.linkedin.com/in/daniel-furmanov/"
+  },
+  "additionalSEO": {
+    "themeColor": "#9810FA",
+    "msapplicationTileColor": "#9810FA",
+    "msapplicationConfig": "/browserconfig.xml"
+  },
+  "canonicalUrl": "https://Acamerus.github.io/",
+  "preconnectUrls": [
+    "https://fonts.googleapis.com"
+  ],
+  "schemaOrg": {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Daniel Furmanov",
+    "jobTitle": "Project Manager",
+    "description": "Experienced project manager with 2+ years delivering technology solutions across diverse industries.",
+    "url": "https://Acamerus.github.io",
+    "sameAs": [
+      "https://www.linkedin.com/in/daniel-furmanov/",
+      "https://github.com/Acamerus"
+    ],
+    "image": "https://Acamerus.github.io/profile_img.png",
+    "email": "danielfurmanov@hotmail.com",
+    "telephone": "+1-718-614-0080",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Brooklyn",
+      "addressRegion": "New York",
+      "addressCountry": "US"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "N/A"
+    }
+  }
+}

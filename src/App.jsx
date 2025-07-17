@@ -9,6 +9,7 @@ import ProjectsSection from "./components/ProjectsSection";
 import SkillsSection from "./components/SkillsSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import ContactSection from "./components/Contact";
+import MetaTags from "./components/MetaTags";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -43,6 +44,7 @@ function App() {
 
   return (
     <div>
+      <MetaTags />
       <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       <HomeSection />
       <AboutSection />
