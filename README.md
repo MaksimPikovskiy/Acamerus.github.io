@@ -167,12 +167,26 @@ To get a copy of the project up and running on your local machine, follow these 
 To deploy the website to GitHub Pages:
 
 1.  Ensure you have pushed your changes to the `main` branch of your GitHub repository.
-2.  Run the deploy script:
+
+3.  Run the deploy script:
     ```bash
     npm run deploy
     ```
-    This will build the application and push the `dist` folder to the `gh-pages` branch of your repository. Your site will then be live at `https://[your-github-username].github.io/`.
+    This will build the application and push the `dist` folder to the `gh-pages` branch of your repository.
 
+4. Navigate to the **GitHub Pages** settings page
+    1. In your web browser, navigate to the GitHub repository
+    2. Above the code browser, click on the tab labeled "Settings"
+    3. In the sidebar, in the "Code and automation" section, click on "Pages"
+5. Configure the "Build and deployment" settings like this: 
+    1. **Source**: Deploy from a branch
+    2. **Branch**: 
+        - Branch: `gh-pages`
+        - Folder: `/ (root)`
+6. Click on the "Save" button
+
+    Your site will then be live at `https://[your-github-username].github.io/`.
+    
 ## Contact
 
 Feel free to reach out via the contact form on the website or connect with me through my social media links provided in the footer.
