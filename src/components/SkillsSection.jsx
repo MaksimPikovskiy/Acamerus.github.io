@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import skills_data from "../../public/data/skills.json";
-import { CircleCheck } from "lucide-react";
+import { CircleCheck, ExternalLink } from "lucide-react";
 
 export default function SkillsSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -35,7 +35,7 @@ export default function SkillsSection() {
       ref={sectionRef}
     >
       <div className="section-container">
-        <h2 className="section-title">Skills & Expertise</h2>
+        <h2 className="section-title">{skills_data.section_title}</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {skills_data.categories.map((category, index) => (
@@ -54,19 +54,38 @@ export default function SkillsSection() {
                       <span className="font-medium text-slate-800 dark:text-slate-200">
                         {skill.name}
                       </span>
-                      <span className="text-purple-600 dark:text-purple-400">
-                        {skill.level}%
-                      </span>
+                      {skill.level ? (
+                        <span className="text-purple-600 dark:text-purple-400">
+                          {skill.level}%
+                        </span>
+                      ) : (
+                        skill.link ?
+                        (
+                          <a
+                            href={skill.link}
+                            className="flex text-slate-600 hover:text-purple-600 dark:text-slate-400 dark:hover:text-purple-400 transition-colors items-center justify-center"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <ExternalLink size={20}/>
+                          </a>
+                        ) :
+                        <span />
+                      )}
                     </div>
-                    <div className="skill-bar">
-                      <div
-                        className="skill-progress"
-                        style={{
-                          width: isVisible ? `${skill.level}%` : "0%",
-                          transition: `width 1s ease-out ${skill_index * 0.2}s`,
-                        }}
-                      ></div>
-                    </div>
+                    {skill.level && (
+                      <div className="skill-bar">
+                        <div
+                          className="skill-progress"
+                          style={{
+                            width: isVisible ? `${skill.level}%` : "0%",
+                            transition: `width 1s ease-out ${
+                              skill_index * 0.2
+                            }s`,
+                          }}
+                        ></div>
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>

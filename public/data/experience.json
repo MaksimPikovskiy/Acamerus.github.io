@@ -6,8 +6,10 @@
     "period": "May 2025 - July 2025",
     "location": "Barcelona, Spain",
     "contributions": [
-      "Developed initial techstack of drone logistics tracking and orders.",
-      "Implemented containerization of application through open source tools like Podman using a virtual machine to avoid unnecessary expenses."
+      "Researched and documented technical stack options (frontend, backend, database, hosting) and developed initial architecture for drone logistics tracking and order management system used by warehouse workers.",
+      "Implemented containerization of application through open source tools like Podman using a virtual machine to avoid unnecessary expenses.",
+      "Collaborated with CEO and 5-member team through 2 daily stand-up meetings, translating technical speak from the team to understandable terminology for the CEO.",
+      "Hosting of full-stack project on Render for cost efficiency with documentation on how to deploy, suspend, redeploy, and delete if needed."
     ],
     "evaluation": ""
   },

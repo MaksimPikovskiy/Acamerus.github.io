@@ -1,14 +1,9 @@
 import { useRef, useState } from "react";
 import contact_data from "../../public/data/contact.json";
-import { Check, LoaderCircle, Mail, MapPin, Phone, Send } from "lucide-react";
+import { Check, LoaderCircle, Send } from "lucide-react";
 import IconComponent from "./IconComponent";
 import emailjs from "@emailjs/browser";
-
-const iconMap = {
-  mail: Mail,
-  phone: Phone,
-  location: MapPin,
-};
+import { ICON_MAP, SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from "./util/constants.js";
 
 export default function ContactSection() {
   const form = useRef();
@@ -68,19 +63,14 @@ export default function ContactSection() {
       setIsSubmitting(true);
       setIsSubmitted(false);
 
-      // EmailJS configuration
-      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-      const userId = import.meta.env.VITE_EMAILJS_USER_ID;
-
-      if (!serviceId || !templateId || !userId) {
+      if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
         console.error("EmailJS configuration is missing.");
         setIsSubmitting(false);
         return;
       }
 
       // Send email using EmailJS
-      emailjs.sendForm(serviceId, templateId, form.current, userId).then(
+      emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
         (result) => {
           console.log("Email successfully sent!", result.text);
           setIsSubmitting(false);
@@ -118,7 +108,7 @@ export default function ContactSection() {
 
             <div className="space-y-6">
               {contact_data.contact.map((item, index) => {
-                const IconToRender = iconMap[item.name];
+                const IconToRender = ICON_MAP[item.name];
                 return (
                   <div key={index} className="flex items-start">
                     <div className="flex-shrink-0 bg-purple-100 dark:bg-purple-900/30 p-3 rounded-full">
