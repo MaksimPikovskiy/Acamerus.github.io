@@ -3,33 +3,6 @@ import meta_data from "../data/meta.json";
 export default function MetaTags() {
   return (
     <head>
-      {/* <!-- Standard favicon --> */}
-      <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
-
-      {/* <!-- PNG favicons for better quality --> */}
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="32x32"
-        href="/favicon/favicon-32x32.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="16x16"
-        href="/favicon/favicon-16x16.png"
-      />
-
-      {/* <!-- Apple touch icon --> */}
-      <link
-        rel="apple-touch-icon"
-        sizes="180x180"
-        href="/favicon/apple-touch-icon.png"
-      />
-
-      {/* <!-- Android --> */}
-      <link rel="manifest" href="/favicon/site.webmanifest" />
-
       {/* General Meta Tags */}
       <title>{meta_data.general.title}</title>
       <meta name="title" content={meta_data.general.title} />
